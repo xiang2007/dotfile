@@ -49,18 +49,3 @@ This documentation outlines the plugins, keybindings, and editor settings for th
 | `<leader>hp` | Preview git hunk changes | Gitsigns |
 | `n / N` | Next/Previous search result | hlslens |
 | `*` | Search word under cursor | hlslens |
-
-### Nvim sturcture
-.
-├── init.lua                # The "Brain" (starts the boot sequence)
-├── install.sh              # Portable script to set up on other machines
-├── lazy-lock.json          # Keeps your plugin versions consistent
-└── lua/
-    └── wee/
-        ├── init.lua        # Entry point for the 'wee' namespace
-        ├── set.lua         # Core editor settings (tabs, numbers, etc.)
-        ├── lazy_init.lua   # Lazy.nvim setup and performance tweaks
-        └── lazy/           # Modular plugin folder
-            ├── lsp.lua     # Language server configuration
-            ├── telescope.lua
-            └── ...         # (All other 18+ plugin files)
